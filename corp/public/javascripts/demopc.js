@@ -31,15 +31,7 @@ device.notification.alert
 DingTalkPC.ready(function(res){
     logger.i('dd.ready rocks!');
 
-    DingTalkPC.device.notification.alert({
-        message: "亲爱的",
-        title: "提示",//可传空
-        buttonName: "收到",
-        onSuccess : function() {
-            /*回调*/
-        },
-        onFail : function(err) {}
-    });
+    logger.i(DingTalkPC);
 
 
     DingTalkPC.runtime.permission.requestAuthCode({
